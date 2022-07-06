@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC>
+<body style="background-color:#d3d3d3;">
+<link rel = "icon" href = "images/anon.png">
+<title>BASH KYC - Privacy Services</title>
+
+<style>
+  h1{
+    text-align:center;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body{
+    margin:40px auto;
+    max-width:1000px;
+    line-height:1.6;
+    font-size:18px;
+    color:#444;
+    padding:0 10px
+  }
+</style>
+
+<h1 id="monero">Monero</h1>
+<p class="aligncenter"><img src="images/privacy/xmr.png" alt="xmr.png" width="604" height="572"></p>
+<br>
+Monero is a private, untraceable, and decentralized cryptocurrency.
+Monero is functionally quite similar to Bitcoin, however the sender, receiver, and amount of transactions are not publicly visible.
+Unlike Bitcoin, Monero is fungible and does not have high fees, meaning that it is much more useful as a digital currency.
+While Monero offers full privacy by default on all transactions, the user is able to optionally disclose a "view key" to 3rd parties for auditing purposes,
+which allows them to view (but not spend) any incoming payments to the user's address.
+See the "<a href="xmr.html">Monero wallets</a>" section for some wallet options.
+<br><br>
+<strong>rating</strong>: 4.5/5 <br>
+<br>
+<strong>pros</strong>:<br>
+- completely fungible<br>
+- private on all transactions<br>
+- full privacy (sender, receiver, amount)<br>
+- low transaction fees<br>
+<br>
+<strong>cons</strong>:<br>
+- requires scanning for incoming payments, which can be slow<br>
+- de-listed from many exchanges; hard to obtain in some places<br>
+<br>
+<strong>links</strong>:<br>
+website: <a href="https://www.getmonero.org" target="_blank" rel="nofollow noreferrer noopener">https://www.getmonero.org</a><br>
+website (onion): <a href="http://monerotoruzizulg5ttgat2emf4d6fbmiea25detrmmy7erypseyteyd.onion" target="_blank" rel="nofollow noreferrer noopener">http://monerotoruzizulg5ttgat2emf4d6fbmiea25detrmmy7erypseyteyd.onion</a><br>
+
+<br>
+<h1 id="coinjoin">Whirlpool (Coinjoin)</h1>
+<p class="aligncenter"><img src="images/privacy/whirlpool.png" alt="whirlpool.png" width="919" height="389"></p>
+<br>
+Coinjoin is a privacy technique for Bitcoin where users' funds are mixed with each other in order to obfuscate the source of the newly-mixed coins.
+This process is trustless, meaning that it is impossible for anyone to steal your coins.
+Whirlpool is a specific implementation of Coinjoin, developed by the creaters of
+<a href="btc.html#samourai">Samourai Wallet</a>.
+When entering the "mixing pool", all mixes after the first are completely free, though re-mixing is known to be slow.
+When funds are spent, they exit the pool.
+Unfortunately, using Coinjoin can result in many services rejecting payments, because mixing coins is seen as suspicious.
+It also requires specific denominations to be mixed, and often creates large amounts of "toxic waste" money which cannot be spent without risking deanonymization.
+<br><br>
+<strong>rating</strong>: 2.5/5 <br>
+<br>
+<strong>pros</strong>:<br>
+- 0 fees after first mix<br>
+<br>
+<strong>cons</strong>:<br>
+- requires specific amounts<br>
+- creates "toxic waste"<br>
+- re-mixing is slow<br>
+- harms fingibility<br>
+<br>
+<strong>links</strong>:<br>
+website: <a href="https://samouraiwallet.com/whirlpool" target="_blank" rel="nofollow noreferrer noopener">https://samouraiwallet.com/whirlpool</a><br>
+website (onion): <a href="http://72typmu5edrjmcdkzuzmv2i4zqru7rjlrcxwtod4nu6qtfsqegngzead.onion/whirlpool" target="_blank" rel="nofollow noreferrer noopener">http://72typmu5edrjmcdkzuzmv2i4zqru7rjlrcxwtod4nu6qtfsqegngzead.onion/whirlpool</a><br>
+
+<br>
+<h1 id="tornado">Tornado Cash</h1>
+<p class="aligncenter"><img src="images/privacy/tornado.png" alt="tornado.png" width="960" height="540"></p>
+<br>
+Tornado Cash is a privacy tool for Ethereum, Binance Smart Chain, Polygon, and more.
+It leverages a technology called zk-SNARKs to completely and fully break the link between a depositing address, and a withdrawing address.
+While this technique offers "perfect" privacy in terms of obfuscating the user's transaction history, it requires a trusted setup,
+meaning that the security of the system is completely dependent upon the honesty of the developers and people who contributed to generating a secret key.
+zk-SNARKs is also a relatively new technology, and has not yet been definitively proven to be secure.
+Currently, Tornado Cash requires specific denominations to be deposited, although there is an expirimental version which supports arbitrary amounts.
+Tornado Cash also recently announced that they will be banning certain addresses from using their web service,
+although users can still access the smart contract directly on the Ethereum/other blockchain.
+<br><br>
+<strong>rating</strong>: 2/5 <br>
+<br>
+<strong>pros</strong>:<br>
+- "perfect" hiding<br>
+<br>
+<strong>cons</strong>:<br>
+- requires specific amounts<br>
+- censorship<br>
+- trusted setup<br>
+- new cryptography<br>
+<br>
+<strong>links</strong>:<br>
+website: <a href="https://tornado.cash" target="_blank" rel="nofollow noreferrer noopener">https://tornado.cash</a><br>
